@@ -127,9 +127,6 @@
             <div class="m-1"><img class="lazyload responsive-img materialboxed" src="img/loading.png" data-src="img/108.png"></div>
         </div>
     </div>
-
-
-
     <footer>
         <div class="p-1">
             <a href="https://appelsiini.net/projects/lazyload/" target="_blank" rel="noopener noreferrer"  style="margin: 10px;">Visita la página de esta libreria de lazyload</a>
@@ -141,7 +138,12 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/materialize.min.js"></script>
     <script src="js/lazyload2.min.js"></script>
-    <script src="js/modal.js"></script>
+    <script>
+    $(document).ready(function(){
+        lazyload();
+        $('.materialboxed').materialbox();
+    });
+    </script>
 </body>
 
 </html>
