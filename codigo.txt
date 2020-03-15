@@ -1,0 +1,18 @@
+ <div class="contenedor">
+       <?php
+        $i=10;
+        while($i<=81){
+            ?>
+            <div><img src="img/loading.png"  data-src="img/0<?php echo $i; ?>.jpg"  ></div>
+            <?php
+            $i+=1;
+        }
+        $i=101;
+        while($i<=108){
+            ?>
+            <div><img src="img/loading.png"  data-src="img/<?php echo $i; ?>.png"  ></div>
+            <?php
+            $i+=1;
+        }
+        ?>
+    </div>
